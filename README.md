@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+### creating the popular Todoist list app,using React (Custom Hooks, Context), Firebase & React Testing Library (unit & integration testing)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
