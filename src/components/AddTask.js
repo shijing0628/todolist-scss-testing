@@ -101,7 +101,7 @@ export const AddTask = ({
          role="button"
         >
          X
-                </span>
+        </span>
        </div>
       </>
      )}
