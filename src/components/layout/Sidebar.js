@@ -22,7 +22,7 @@ export const Sidebar = () => {
           }}
         >
 
-          <span><FaInbox /></span>
+          <span style={{ marginRight: '8px' }}><FaInbox /></span>
           <span>Inbox</span>
         </li>
 
@@ -33,7 +33,7 @@ export const Sidebar = () => {
             setSelectedProject('TODAY')
           }}
         >
-          <span><FaRegCalendar /></span>
+          <span style={{ marginRight: '8px' }}><FaRegCalendar /></span>
           <span>Today</span>
         </li>
         <li data-testid="next_7"
@@ -43,7 +43,7 @@ export const Sidebar = () => {
             setSelectedProject('NEXT_7')
           }}
         >
-          <span><FaRegCalendarAlt /></span>
+          <span style={{ marginRight: '8px' }}><FaRegCalendarAlt /></span>
           <span>Next 7 days</span>
         </li>
       </ul>

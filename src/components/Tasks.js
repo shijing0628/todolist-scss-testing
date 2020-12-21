@@ -4,6 +4,7 @@ import { Checkbox } from './Checkbox'
 import { collatedTasks } from '../constants'
 import { useSelectedProjectsValue, useProjectsValue } from '../context'
 import { getTitle, getCollatedTitle, collatedTasksExist } from '../helpers';
+import { AddTask } from './AddTask';
 
 export const Tasks = () => {
  const { selectedProject } = useSelectedProjectsValue()
@@ -38,6 +39,7 @@ export const Tasks = () => {
      </li>
     ))}
    </ul>
+   <AddTask />
   </div>
  )
 }
