@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Content } from './components/layout/Content';
 import { Header } from './components/layout/Header';
 import { ProjectsProvider, SelectedProjectsProvider } from './context';
-
+import PropTypes from 'prop-types';
 
 
 function App({ darkModeDefault = false }) {
@@ -20,5 +20,7 @@ function App({ darkModeDefault = false }) {
 
   );
 }
-
+App.propTypes = {
+  darkModeDefault: PropTypes.bool,
+};
 export default App;
