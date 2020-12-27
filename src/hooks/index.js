@@ -10,7 +10,7 @@ export const useTasks = (selectedProject) => {
 
 
   useEffect(() => {
-    let unsubscribe = firebase
+    let unsubscribe = firebase.firestore()
       .collection('tasks')
       .where('userId', '==', 'u1');
 
@@ -58,7 +58,7 @@ export const useProjects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    firebase
+    firebase.firestore()
       .collection('projects')
       .where('userId', '==', 'u1')
       .orderBy('projectId')
